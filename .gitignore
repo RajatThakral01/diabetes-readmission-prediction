@@ -1,0 +1,10 @@
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# Mac / VS Code
+.DS_Store
+.vscode/
+
+# Models (do NOT upload)
+*.pkl
