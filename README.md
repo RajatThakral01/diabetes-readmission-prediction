@@ -40,7 +40,7 @@ Hospital readmissions within 30 days of discharge are costly and often preventab
 |---|---|
 | Records | 101,766 patient encounters |
 | Features | 50 original features |
-| Target | `readmitted` → binarised to `1` if `<30` days, else `0` |
+| Target | `readmitted` → binarized to `1` if `<30` days, else `0` |
 | Class distribution | ~10% readmitted within 30 days (imbalanced) |
 
 **Key feature groups:**
@@ -130,7 +130,7 @@ The full preprocessing pipeline is built using scikit-learn `Pipeline` and `Colu
    |---|---|
    | 390–459 | Circulatory |
    | 460–519 | Respiratory |
-   | 250–250 | Diabetes |
+   | 250 | Diabetes |
    | 520–579 | Digestive |
    | 280–289 | Blood |
    | Others | Other |
@@ -191,7 +191,7 @@ Top predictors identified by XGBoost:
 | 7 | `A1Cresult` | Glycaemic control |
 | 8 | `max_glu_serum` | Blood glucose levels |
 
-**Clinical insight:** Patients with a history of inpatient admissions, unstable insulin regimens, or poor glycaemic control are at the highest risk of readmission.
+**Clinical insight:** Patients with a history of inpatient admissions, unstable insulin regimens, or poor glycemic control are at the highest risk of readmission.
 
 ---
 
